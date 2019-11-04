@@ -17,4 +17,9 @@ export class ReadComponent implements OnInit {
     })
   }
 
+onDelete(id:String){
+  console.log("Deleteing movie with id: " + id);
+  this.movieService.DeleteMovie(id).subscribe();
+}
+
 }
